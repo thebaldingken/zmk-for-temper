@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define Base 0
-#define NAV_NUM 1
-#define SYM 2
+#define SYM 1
+#define NAV 2
 #define FUN 3
 
 &sk { quick-release; };
@@ -187,8 +187,8 @@
         };
 
         sym {
-            display-name = "SYMBOL";
-            label = "NAV_NUM";
+            display-name = "Symbol";
+            label = "SYM";
             bindings = <
   &kp N1        &kp N2        &kp N3        &kp N4          &kp N5    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
   &kp NUMBER_6  &kp N7        &kp N8        &kp N9          &kp N0    &kp GRAVE       &kp TILDE  &none             &kp DOUBLE_QUOTES  &kp SQT
@@ -198,8 +198,8 @@
         };
 
         nav {
-            label = "SYM";
-            display-name = "NAV";
+            label = "NAV";
+            display-name = "Cursor";
             bindings = <
   &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR  &kp PERCENT    &kp PG_UP      &kp HOME         &kp UP         &kp END        &kp PRINTSCREEN
   &kp CARET        &kp AMPERSAND  &kp STAR      &kp LPAR    &kp RPAR       &kp PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT      &kp GRAVE
@@ -216,7 +216,7 @@
                     &trans           &trans          &trans             &trans        &trans             &trans
             >;
 
-            display-name = "FUN";
+            display-name = "Fun!";
             label = "FUN";
         };
     };
